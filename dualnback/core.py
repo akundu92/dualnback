@@ -7,12 +7,19 @@ def visual_generator():
 
 def audio_generator():
     t = tuple(i for i in range(1, 26))
-
     return choice(t)
 
 
-def check_visual(seq,user_input,n=1):
-    pass
+def check_visual(seq,user_input=None,n=1):
+    if seq[-1]==seq[-1-n] and user_input==True:
+        return 1
+    elif seq[-1]==seq[-1-n] and user_input==None:
+        return 2
+    elif seq[-1] != seq[-1 - n] and user_input is True:
+        return 3
+    elif seq[-1] != seq[-1 - n] and user_input is None:
+        return 4
+
 
 
 def check_audio(seq,user_input,n=1):

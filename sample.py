@@ -1,6 +1,5 @@
-import dualnback.core as core
-print(core.visual_generator())
-l=[core.audio_generator() for i in range(20000)]
-for i in range(1,7):
-    print(l.count(i))
+from dualnback.core import check_visual
+print(check_visual([1, 2, 2], True, 2))
+print(check_visual([1, 2, 1], True, 2))
+print(check_visual([1, 2, 2], None, 2))
 
