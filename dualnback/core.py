@@ -16,7 +16,7 @@ def check_visual(seq,user_input=False,n=1):
     if type(user_input) is not bool:
         raise TypeError('user_input should be of type bool')
     if type(n) is not int or n<=0 :
-        raise ValueError('N can not be negative or non integer')
+        raise ValueError('N can not be negative,zero or non integer')
     if(n<=(len(seq)-1)):
         if seq[-1]==seq[-1-n] and user_input==True:
             return 1
