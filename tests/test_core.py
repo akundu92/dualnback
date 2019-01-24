@@ -55,19 +55,6 @@ class CoreTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             core.check_visual([7, 8, 9, 7], False, -1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-    #
     # def check_audio(self):
 
     #     pass
